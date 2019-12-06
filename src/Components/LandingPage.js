@@ -6,7 +6,7 @@ class LandingPage extends React.Component{
       return(
           <div className='landingPage'>
               <header>User Directory</header>
-              <div><Link>Begin</Link></div>
+              <div><Link to={'/user-list'}>Begin</Link></div>
           </div>
       )  
     }
