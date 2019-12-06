@@ -1,18 +1,27 @@
 import React from 'react'
 import {withRouter} from 'react-router-dom'
+import MediaQuery from 'react-responsive'
 
 class UserCard extends React.Component{
     render(){
       return(
           <div className='userCard'>
-             <ul>User
-             <li>First + Last Name</li>
-             <li>email</li>
-             <li>phone</li>
-             <li>age</li>
-             <li>gender</li>
+             <ul>
+                <li>{this.props.name.first} {this.props.name.last}</li>
+                <li>{this.props.email}</li>
+                <li>{this.props.phone}</li>
+                <li>{this.props.age}</li>
+                <li>{this.props.gender}</li>
              </ul>
-             <img alt=' will be dislayed here'></img>
+             <MediaQuery maxWidth={760}>
+                <img src={this.props.picture.thumbnail} alt='headshot of user' id='thumbnail'/>
+             </MediaQuery>
+             <MediaQuery minWidth={761} maxWidth={1023}>
+                <img src={this.props.picture.medium} id='mediumImg' alt='headshot of user'/>
+             </MediaQuery>
+             <MediaQuery minWidth={1024}>
+                <img src={this.props.picture.large} id='LargeImg' alt='headshot of user'/>
+             </MediaQuery>
           </div>
       )  
     }
