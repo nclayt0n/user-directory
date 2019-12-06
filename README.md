@@ -1,6 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## User Directory
+## `User Directory`
+### Live Link
+ https://nrclayton-user-directory.now.sh
+
 ### API
 randomuser.me API to fetch random user data.
 
