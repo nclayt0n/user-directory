@@ -5,10 +5,10 @@ import config from './config'
 class UserList extends React.Component{
     constructor(){
     super()
-this.state={
-   page:1,
-   pageLimit:10,
-   users:[]
+        this.state={
+            page:1,
+            pageLimit:10,
+            users:[]
   }
 }
     componentDidMount(){
@@ -19,10 +19,11 @@ this.state={
             },
         };
             Promise.all([
-                fetch(`${config.API_ENDPOINT}?page=${this.state.page}&results=${this.state.pageLimit}&inc=name,email,phone,age,gender,picture`,
+                fetch(`${config.API_ENDPOINT}`,
           options)
             ])
             .then(([usersRes]) => {
+                console.log(usersRes)
                 if (!usersRes.ok)
                     return usersRes.json().then(e => Promise.reject(e));
                     return Promise.all([usersRes.json()]);
