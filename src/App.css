@@ -321,6 +321,7 @@ h2 {
     }
     #mediumImgContainer {
         margin: auto;
+        background-color: var(--coolGray);
     }
     .landingPage {
         margin: 50px auto;
