@@ -5,8 +5,10 @@ class LandingPage extends React.Component{
     render(){
       return(
           <div className='landingPage'>
-              <header>User Directory</header>
-              <div><Link to={'/user-list'}>Begin</Link></div>
+            <h1>User Directory</h1>
+            <div id='beginLinkContainer'>
+                <Link to={'/user-list'}>Browse Directory</Link>
+            </div>
           </div>
       )  
     }

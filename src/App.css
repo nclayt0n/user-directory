@@ -152,6 +152,57 @@ table {
     letter-spacing: 1px;
 }
 
+.notFound {
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+    background-color: var(--burgundy);
+    color: white;
+}
+
+.notFound p {
+    text-align: center;
+    margin: auto;
+    background-color: var(--burgundy);
+    color: white;
+    font-size: 18px;
+}
+
+.landingPage {
+    background-color: var(--burgundy);
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid var(--oliveGreen);
+}
+
+h1 {
+    font-size: 33px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: var(--burgundy);
+    color: white;
+    margin: 50px auto;
+    text-shadow: .5px .5px var(--oliveGreen);
+    letter-spacing: 3px;
+}
+
+#beginLinkContainer {
+    text-align: center;
+    background-color: var(--coolGray);
+    padding: 20px;
+    text-shadow: .5px .5px var(--coolGray);
+    letter-spacing: 2.5px;
+    border: 2px solid var(--gunmetalGray);
+}
+
+.landingPage a {
+    background-color: var(--coolGray);
+    color: var(--gunmetalGray);
+    font-size: 28px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
 h2 {
     font-size: 28px;
     font-weight: bolder;
@@ -159,13 +210,13 @@ h2 {
     background-color: var(--burgundy);
     color: white;
     margin: 10px;
-    text-shadow: .5px .5px var(--coolGray);
+    text-shadow: .5px .5px var(--oliveGreen);
     letter-spacing: 2.5px;
 }
 
 .userList {
     margin: 20px auto;
-    border: 1px solid black;
+    border: 1px solid var(--oliveGreen);
     padding: 15px;
     width: 300px;
     background-color: var(--burgundy);
@@ -199,6 +250,7 @@ h2 {
 #userName {
     font-weight: bold;
     font-size: 22px;
+    text-shadow: .5px .5px var(--oliveGreen);
 }
 
 #thumbnail {
@@ -270,6 +322,14 @@ h2 {
     #mediumImgContainer {
         margin: auto;
     }
+    .landingPage {
+        margin: 50px auto;
+        width: 450px;
+    }
+    #beginLinkContainer {
+        margin: auto;
+        width: 70%;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -295,13 +355,27 @@ h2 {
         font-weight: bold;
         font-size: 28px;
     }
+    h1 {
+        font-size: 44px;
+    }
     h2 {
         font-size: 44px;
+    }
+    .landingPage {
+        margin: 50px auto;
+        width: 650px;
+    }
+    #beginLinkContainer {
+        margin: auto;
+        width: 50%;
     }
     .button,
     #currentPage {
         width: 70px;
         font-size: 22px;
         font-weight: bold;
+    }
+    .notFound p {
+        font-size: 22px;
     }
 }
