@@ -135,3 +135,50 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+.userList {
+    margin: 20px auto;
+    border: 1px solid black;
+    padding: 15px;
+    width: fit-content;
+}
+
+.userCard {
+    border: 1px solid blue;
+    padding: 5px;
+    display: flex;
+}
+
+.userCard ul {
+    border: 1px solid green;
+    height: 100px;
+    width: fit-content;
+}
+
+.userCard li {
+    border: 1px solid yellow;
+    width: fit-content;
+}
+
+#thumbnail {
+    border: 1px solid pink;
+    height: 55px;
+}
+
+#thumbnailContainer {
+    margin: auto;
+}
+
+.buttonContainer {
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    padding: 5px;
+}
+
+.button {
+    border: 1px solid black;
+    margin: auto;
+}
+
+@media screen and(min-width:761px) {}

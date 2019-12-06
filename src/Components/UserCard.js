@@ -14,7 +14,9 @@ class UserCard extends React.Component{
                 <li>{this.props.gender}</li>
              </ul>
              <MediaQuery maxWidth={760}>
-                <img src={this.props.picture.thumbnail} alt='headshot of user' id='thumbnail'/>
+                <div id='thumbnailContainer'>
+                    <img src={this.props.picture.thumbnail} alt='headshot of user' id='thumbnail'/>
+                </div>
              </MediaQuery>
              <MediaQuery minWidth={761} maxWidth={1023}>
                 <img src={this.props.picture.medium} id='mediumImg' alt='headshot of user'/>
