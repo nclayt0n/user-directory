@@ -157,6 +157,7 @@ class UserList extends React.Component{
         let usersDisplayed=this.state.users.slice(0,10);
       return(
           <div className='userList'>
+          <h2>User Directory</h2>
           {usersDisplayed.map((user)=>
             <UserCard
                 key={uuidv4()}

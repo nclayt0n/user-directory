@@ -7,7 +7,7 @@ class UserCard extends React.Component{
       return(
           <div className='userCard'>
              <ul>
-                <li>{this.props.name.first} {this.props.name.last}</li>
+                <li id='userName'>{this.props.name.first} {this.props.name.last}</li>
                 <li>{this.props.email}</li>
                 <li>{this.props.phone}</li>
                 <li>{this.props.age}</li>
@@ -19,7 +19,9 @@ class UserCard extends React.Component{
                 </div>
              </MediaQuery>
              <MediaQuery minWidth={761} maxWidth={1023}>
-                <img src={this.props.picture.medium} id='mediumImg' alt='headshot of user'/>
+                <div id='mediumImgContainer'>
+                    <img src={this.props.picture.medium} id='mediumImg' alt='headshot of user'/>
+                </div>
              </MediaQuery>
              <MediaQuery minWidth={1024}>
                 <img src={this.props.picture.large} id='LargeImg' alt='headshot of user'/>

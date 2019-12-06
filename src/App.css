@@ -136,49 +136,172 @@ table {
     border-spacing: 0;
 }
 
+
+/*User Directory css*/
+
+:root {
+    --oliveGreen: #4B443C;
+    --burgundy: #4D0011;
+    --gunmetalGray: #53565A;
+    --coolGray: #E4E5E8;
+}
+
+* {
+    border-radius: 4px;
+    background-color: var(--gunmetalGray);
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: var(--burgundy);
+    color: white;
+    margin: 10px;
+    text-shadow: .5px .5px var(--coolGray);
+    letter-spacing: 2.5px;
+}
+
 .userList {
     margin: 20px auto;
     border: 1px solid black;
     padding: 15px;
-    width: fit-content;
+    width: 300px;
+    background-color: var(--burgundy);
 }
 
 .userCard {
-    border: 1px solid blue;
+    border: 2px solid var(--gunmetalGrays);
+    margin: 20px auto;
     padding: 5px;
     display: flex;
+    background-color: var(--coolGray);
 }
 
 .userCard ul {
-    border: 1px solid green;
-    height: 100px;
+    flex: 2;
+    height: fit-content;
     width: fit-content;
+    background-color: var(--coolGray);
+    padding: 5px;
 }
 
 .userCard li {
-    border: 1px solid yellow;
+    background-color: var(--coolGray);
     width: fit-content;
+    margin: 5px;
+    font-size: 18px;
+    color: var(--burgundy);
+    word-break: break-word;
+}
+
+#userName {
+    font-weight: bold;
+    font-size: 22px;
 }
 
 #thumbnail {
-    border: 1px solid pink;
+    border: 2px solid var(--gunmetalGray);
     height: 55px;
 }
 
 #thumbnailContainer {
+    background-color: var(--coolGray);
     margin: auto;
+}
+
+#currentPage {
+    border: 4px solid var(--burgundy);
+    margin: auto;
+    background-color: var(--oliveGreen);
+    color: white;
+    text-shadow: .25px .25px var(--burgundy);
+    width: 50px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .buttonContainer {
-    border: 1px solid black;
-    width: 100%;
+    border: 1px solid var(--gunmetalGray);
+    width: 90%;
+    margin: auto;
     display: flex;
     padding: 5px;
+    background-color: var(--coolGray)
 }
 
 .button {
-    border: 1px solid black;
+    border: 1px solid var(--gunmetalGray);
     margin: auto;
+    background-color: var(--burgundy);
+    color: white;
+    width: 50px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-@media screen and(min-width:761px) {}
+@media screen and (min-width:761px) {
+    h2 {
+        font-size: 36px;
+    }
+    .userList {
+        width: 450px;
+    }
+    .userCard {
+        width: 90%;
+    }
+    .userCard ul {
+        flex: 2;
+        margin: 10px;
+        height: fit-content;
+        width: fit-content;
+    }
+    #userName {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    #mediumImg {
+        border: 2px solid black;
+        height: 80px;
+    }
+    #mediumImgContainer {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .userCard ul {
+        flex: 2;
+    }
+    .userCard li {
+        font-size: 22px;
+    }
+    .userList {
+        width: 650px;
+    }
+    .userCard {
+        width: 90%;
+    }
+    .userCard ul {
+        flex: 2;
+        margin: 10px;
+        height: fit-content;
+        width: fit-content;
+    }
+    #userName {
+        font-weight: bold;
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 44px;
+    }
+    .button,
+    #currentPage {
+        width: 70px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+}
