@@ -5,7 +5,14 @@ class UserCard extends React.Component{
     render(){
       return(
           <div className='userCard'>
-             User Card
+             <ul>User
+             <li>First + Last Name</li>
+             <li>email</li>
+             <li>phone</li>
+             <li>age</li>
+             <li>gender</li>
+             </ul>
+             <img alt=' will be dislayed here'></img>
           </div>
       )  
     }
