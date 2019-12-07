@@ -19,6 +19,7 @@ class UserCard extends React.Component{
          <section className='userCard'>
             {this.state.hidden===true
               ?<button  
+                  aria-label="user's first and last name"
                   type='button' 
                   onClick={()=>{this.setState({hidden:false})}} 
                   className='userNameButton'>
@@ -28,6 +29,7 @@ class UserCard extends React.Component{
             {this.state.hidden===false
                ?<ul className={this.state.ulClassName}>
                   <li 
+                     aria-label="user's first and last name"
                      className='userName' 
                      onClick={()=>{this.setState({hidden:true})}}>
                      {this.props.name.first} {this.props.name.last}
@@ -40,10 +42,10 @@ class UserCard extends React.Component{
                            className='thumbnail'/>
                      </div>
                   </MediaQuery>
-                  <li>{this.props.age}</li>
-                  <li>{this.props.gender}</li> 
-                  <li>{this.props.phone}</li>
-                  <li>{this.props.email}</li>  
+                  <li aria-label="users' age">{this.props.age}</li>
+                  <li aria-label="user's gender">{this.props.gender}</li> 
+                  <li aria-label="user's phone number">{this.props.phone}</li>
+                  <li aria-label="user's email address">{this.props.email}</li>  
                </ul>
                :null}
                <MediaQuery minWidth={761} maxWidth={1023}>

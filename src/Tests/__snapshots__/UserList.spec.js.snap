@@ -14,6 +14,7 @@ exports[`<UserList /> snapshot 1`] = `
     className="buttonContainer"
   >
     <button
+      aria-label="current page of users"
       className="button"
       id="currentPage"
       type="button"
@@ -21,6 +22,7 @@ exports[`<UserList /> snapshot 1`] = `
       1
     </button>
     <button
+      aria-label="button for next page of users"
       className="button"
       onClick={[Function]}
       type="button"
@@ -32,6 +34,7 @@ exports[`<UserList /> snapshot 1`] = `
     className="buttonContainer"
   >
     <CSVLink
+      aria-label="button for exporting current users on page to CSV file"
       asyncOnClick={false}
       className="button"
       data={Array []}

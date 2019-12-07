@@ -77,30 +77,35 @@ class UserList extends React.Component{
             <div className='buttonContainer'>
                 {this.state.page===1 ? null: 
                     <button 
+                        aria-label='button for previous page of users'
                         className='button' 
                         type='button' 
                         onClick={()=>this.callApi(this.state.page-1)}>Back
                     </button>}
                 {this.state.page===1 ? null: 
                     <button 
+                        aria-label='button for previous page of users'
                         className='button' 
                         type='button' 
                         onClick={()=>this.callApi(this.state.page-1)}>{this.state.page-1}
                     </button>}
 
                     <button 
+                    aria-label='current page of users'
                         className='button' 
                         id='currentPage' 
                         type='button'>{this.state.page}
                     </button>
                 {this.state.page===1 ? null: 
                     <button 
+                        aria-label='button for next page of users'
                         className='button' 
                         type='button' 
                         onClick={()=>this.callApi(this.state.page+1)}>{this.state.page+1}
                     </button>}
 
                     <button 
+                        aria-label='button for next page of users'
                         className='button' 
                         type='button' 
                         onClick={()=>this.callApi(this.state.page+1)}>Next
@@ -108,6 +113,7 @@ class UserList extends React.Component{
             </div>
             <div className='buttonContainer'>
                 <CSVLink 
+                    aria-label='button for exporting current users on page to CSV file'
                     className='button' 
                     id='exportButton' 
                     data={data} 

@@ -5,6 +5,7 @@ exports[`<UserCard /> snapshot 1`] = `
   className="userCard"
 >
   <button
+    aria-label="user's first and last name"
     className="userNameButton"
     onClick={[Function]}
     type="button"
