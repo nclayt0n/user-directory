@@ -8,9 +8,10 @@ exports[`<LandingPage /> snapshot 1`] = `
     User Directory
   </h1>
   <div
-    id="beginLinkContainer"
+    id="browseButton"
   >
     <Link
+      id="browseLink"
       to="/user-list"
     >
       Browse Directory
