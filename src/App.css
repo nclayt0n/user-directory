@@ -313,6 +313,7 @@ h2 {
 
 #exportButton {
     width: fit-content;
+    text-decoration: none;
 }
 
 @media screen and (min-width:761px) {
