@@ -82,8 +82,8 @@ class UserList extends React.Component{
                     <button className='button' type='button' onClick={()=>this.callApi(this.state.page-1)}>{this.state.page-1}</button>}
 
                     <button className='button' id='currentPage' type='button'>{this.state.page}</button>
-
-                    <button className='button' type='button' onClick={()=>this.callApi(this.state.page+1)}>{this.state.page+1}</button>
+                {this.state.page===1 ? null: 
+                    <button className='button' type='button' onClick={()=>this.callApi(this.state.page+1)}>{this.state.page+1}</button>}
 
                     <button className='button' type='button' onClick={()=>this.callApi(this.state.page+1)}>Next</button>
                     

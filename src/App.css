@@ -249,20 +249,20 @@ h2 {
     word-break: break-word;
 }
 
-#userName {
+.userName {
     font-weight: bold;
     font-size: 22px;
     text-shadow: .5px .5px var(--oliveGreen);
     margin: auto;
 }
 
-#thumbnail {
+.thumbnail {
     border: 2px solid var(--gunmetalGray);
     height: 55px;
     float: right;
 }
 
-#thumbnailContainer {
+.thumbnailContainer {
     background-color: var(--coolGray);
     margin: auto;
 }
@@ -332,15 +332,15 @@ h2 {
         height: fit-content;
         width: fit-content;
     }
-    #userName {
+    .userName {
         font-weight: bold;
         font-size: 24px;
     }
-    #mediumImg {
-        border: 2px solid black;
+    .mediumImg {
+        border: 2px solid var(--gunmetalGray);
         height: 80px;
     }
-    #mediumImgContainer {
+    .mediumImgContainer {
         margin: auto;
         background-color: var(--coolGray);
     }
@@ -393,6 +393,9 @@ h2 {
     #beginLinkContainer {
         margin: auto;
         width: 50%;
+    }
+    .LargeImg {
+        width: 128px;
     }
     .button,
     #currentPage {
