@@ -37,6 +37,28 @@ class UserList extends React.Component{
         });
     }
     render(){
+        const headers = [
+            { label: "First Name", key: "first_name" },
+            { label: "Last Name", key: "last_name" }, 
+            { label: "Age", key: "age" },
+            { label: "Phone", key: "phone" },
+            { label: "Email", key: "email" },
+            { label: "Gender", key: "gender" },
+            { label: "Thumbnail Picture", key: "thumbnail_picture" },
+            { label: "Medium Picture", key: "medium_picture" },
+            { label: "Large Picture", key: "large_picture" }
+          ];
+          const data=this.state.users.map(x=>({
+            first_name:x.name.first,
+            last_name:x.name.last, 
+            age:x.dob.age,
+            phone:x.phone,
+            email:x.email,
+            gender:x.gender,
+            large_picture:x.picture.large,
+            medium_picture:x.picture.medium,
+            thumbnail_picture:x.picture.thumbnail
+            }));
     let usersDisplayed=this.state.users.slice(0,10);
       return(
         <main className='userList'>
@@ -67,7 +89,7 @@ class UserList extends React.Component{
                     
             </div>
             <div className='buttonContainer'>
-                <CSVLink className='button' id='exportButton' data={this.state.users.map(x=>({lastname:x.name.last, firstname:x.name.first,email:x.email,age:x.dob.age,gender:x.gender,largepicture:x.picture.large,mediumpicture:x.picture.medium,thumbnailpicture:x.picture.thumbnail}))}>Export Page {this.state.page} to CSV</CSVLink>
+                <CSVLink className='button' id='exportButton' data={data} headers={headers}>Export Page {this.state.page} to CSV</CSVLink>
             </div>
 
         </main>
