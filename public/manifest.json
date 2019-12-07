@@ -1,4 +1,5 @@
 {
+    "short_name": "user-directory",
     "name": "user-directory",
     "manifest_version": 2,
     "icons": [{
