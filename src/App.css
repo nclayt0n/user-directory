@@ -236,7 +236,7 @@ h2 {
     width: fit-content;
     background-color: var(--coolGray);
     padding: 5px;
-    text-align: center;
+    text-align: center
 }
 
 .userCard li {
@@ -254,6 +254,18 @@ h2 {
     font-size: 22px;
     text-shadow: .5px .5px var(--oliveGreen);
     margin: auto;
+    cursor: pointer;
+}
+
+.userNameButton {
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: .5px .5px var(--oliveGreen);
+    margin: 5px auto;
+    border: none;
+    background-color: var(--coolGray);
+    cursor: pointer;
+    color: var(--burgundy);
 }
 
 .thumbnail {
@@ -309,10 +321,12 @@ h2 {
     padding: 5px;
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #exportButton {
     width: fit-content;
+    padding: 10px;
     text-decoration: none;
 }
 
@@ -395,7 +409,8 @@ h2 {
         width: 50%;
     }
     .LargeImg {
-        width: 128px;
+        height: 128px;
+        margin: 20px;
     }
     .button,
     #currentPage {

@@ -1,7 +1,90 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<UserList /> snapshot 1`] = `
-<ContextConsumer>
-  <Component />
-</ContextConsumer>
+<main
+  className="userList"
+>
+  <h2>
+    User Directory
+  </h2>
+  <ValidationError
+    errorMessage=""
+  />
+  <div
+    className="buttonContainer"
+  >
+    <button
+      className="button"
+      id="currentPage"
+      type="button"
+    >
+      1
+    </button>
+    <button
+      className="button"
+      onClick={[Function]}
+      type="button"
+    >
+      Next
+    </button>
+  </div>
+  <div
+    className="buttonContainer"
+  >
+    <CSVLink
+      asyncOnClick={false}
+      className="button"
+      data={Array []}
+      filename="generatedBy_react-csv.csv"
+      headers={
+        Array [
+          Object {
+            "key": "first_name",
+            "label": "First Name",
+          },
+          Object {
+            "key": "last_name",
+            "label": "Last Name",
+          },
+          Object {
+            "key": "age",
+            "label": "Age",
+          },
+          Object {
+            "key": "phone",
+            "label": "Phone",
+          },
+          Object {
+            "key": "email",
+            "label": "Email",
+          },
+          Object {
+            "key": "gender",
+            "label": "Gender",
+          },
+          Object {
+            "key": "thumbnail_picture",
+            "label": "Thumbnail Picture",
+          },
+          Object {
+            "key": "medium_picture",
+            "label": "Medium Picture",
+          },
+          Object {
+            "key": "large_picture",
+            "label": "Large Picture",
+          },
+        ]
+      }
+      id="exportButton"
+      separator=","
+      target="_blank"
+      uFEFF={true}
+    >
+      Export Page 
+      1
+       to CSV
+    </CSVLink>
+  </div>
+</main>
 `;

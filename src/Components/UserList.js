@@ -1,5 +1,4 @@
 import React from 'react'
-import {withRouter} from 'react-router-dom'
 import UserCard from './UserCard'
 import '../App.css'
 import ApiService from '../services/api-service'
@@ -48,7 +47,7 @@ class UserList extends React.Component{
             { label: "Medium Picture", key: "medium_picture" },
             { label: "Large Picture", key: "large_picture" }
           ];
-          const data=this.state.users.map(x=>({
+        const data=this.state.users.map(x=>({
             first_name:x.name.first,
             last_name:x.name.last, 
             age:x.dob.age,
@@ -59,7 +58,7 @@ class UserList extends React.Component{
             medium_picture:x.picture.medium,
             thumbnail_picture:x.picture.thumbnail
             }));
-    let usersDisplayed=this.state.users.slice(0,10);
+        let usersDisplayed=this.state.users.slice(0,10);
       return(
         <main className='userList'>
             <h2>User Directory</h2>
@@ -77,23 +76,48 @@ class UserList extends React.Component{
             )}
             <div className='buttonContainer'>
                 {this.state.page===1 ? null: 
-                    <button className='button' type='button' onClick={()=>this.callApi(this.state.page-1)}>Back</button>}
+                    <button 
+                        className='button' 
+                        type='button' 
+                        onClick={()=>this.callApi(this.state.page-1)}>Back
+                    </button>}
                 {this.state.page===1 ? null: 
-                    <button className='button' type='button' onClick={()=>this.callApi(this.state.page-1)}>{this.state.page-1}</button>}
+                    <button 
+                        className='button' 
+                        type='button' 
+                        onClick={()=>this.callApi(this.state.page-1)}>{this.state.page-1}
+                    </button>}
 
-                    <button className='button' id='currentPage' type='button'>{this.state.page}</button>
+                    <button 
+                        className='button' 
+                        id='currentPage' 
+                        type='button'>{this.state.page}
+                    </button>
                 {this.state.page===1 ? null: 
-                    <button className='button' type='button' onClick={()=>this.callApi(this.state.page+1)}>{this.state.page+1}</button>}
+                    <button 
+                        className='button' 
+                        type='button' 
+                        onClick={()=>this.callApi(this.state.page+1)}>{this.state.page+1}
+                    </button>}
 
-                    <button className='button' type='button' onClick={()=>this.callApi(this.state.page+1)}>Next</button>
-                    
+                    <button 
+                        className='button' 
+                        type='button' 
+                        onClick={()=>this.callApi(this.state.page+1)}>Next
+                    </button>
             </div>
             <div className='buttonContainer'>
-                <CSVLink className='button' id='exportButton' data={data} headers={headers}>Export Page {this.state.page} to CSV</CSVLink>
+                <CSVLink 
+                    className='button' 
+                    id='exportButton' 
+                    data={data} 
+                    headers={headers}>
+                    Export Page {this.state.page} to CSV
+                </CSVLink>
             </div>
 
         </main>
       )  
     }
 }
-export default withRouter(UserList)
+export default UserList

@@ -10,7 +10,14 @@ import App from '../App'
  describe('<UserCard />', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div');
-        ReactDOM.render(<BrowserRouter><App><UserList><UserCard/></UserList></App></BrowserRouter>,div);
+        ReactDOM.render(
+        <BrowserRouter>
+            <App>
+                <UserList>
+                    <UserCard/>
+                </UserList>
+            </App>
+        </BrowserRouter>,div);
         ReactDOM.unmountComponentAtNode(div);
     });
     it('snapshot', () => {

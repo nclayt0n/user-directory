@@ -1,7 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<UserCard /> snapshot 1`] = `
-<ContextConsumer>
-  <Component />
-</ContextConsumer>
+<section
+  className="userCard"
+>
+  <button
+    className="userNameButton"
+    onClick={[Function]}
+    type="button"
+  >
+    Louane
+     
+    Vidal
+  </button>
+  <MediaQuery
+    maxWidth={1023}
+    minWidth={761}
+  >
+    <div
+      className="mediumImgContainer"
+    >
+      <img
+        alt="headshot of user"
+        className="mediumImg"
+        src="https://randomuser.me/api/portraits/med/women/88.jpg"
+      />
+    </div>
+  </MediaQuery>
+  <MediaQuery
+    minWidth={1024}
+  >
+    <img
+      alt="headshot of user"
+      className="LargeImg"
+      src="https://randomuser.me/api/portraits/women/88.jpg"
+    />
+  </MediaQuery>
+</section>
 `;
