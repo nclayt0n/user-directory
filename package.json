@@ -41,7 +41,9 @@
         "enzyme": "^3.10.0",
         "enzyme-adapter-react-16": "^1.15.1",
         "enzyme-to-json": "^3.4.3",
+        "export-to-csv": "^0.2.1",
         "react": "^16.12.0",
+        "react-csv": "^1.1.2",
         "react-router-dom": "^5.1.2",
         "react-test-renderer": "^16.12.0"
     }

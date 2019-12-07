@@ -236,6 +236,7 @@ h2 {
     width: fit-content;
     background-color: var(--coolGray);
     padding: 5px;
+    text-align: center;
 }
 
 .userCard li {
@@ -243,6 +244,7 @@ h2 {
     width: fit-content;
     margin: 5px;
     font-size: 18px;
+    text-align: left;
     color: var(--burgundy);
     word-break: break-word;
 }
@@ -251,11 +253,13 @@ h2 {
     font-weight: bold;
     font-size: 22px;
     text-shadow: .5px .5px var(--oliveGreen);
+    margin: auto;
 }
 
 #thumbnail {
     border: 2px solid var(--gunmetalGray);
     height: 55px;
+    float: right;
 }
 
 #thumbnailContainer {
@@ -275,24 +279,40 @@ h2 {
     font-weight: bold;
 }
 
+.errorContainer {
+    background-color: white;
+    margin: 50px;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+    text-shadow: .5px .25px var(--gunmetalGray);
+    text-transform: uppercase;
+}
+
 .buttonContainer {
     border: 1px solid var(--gunmetalGray);
-    width: 90%;
-    margin: auto;
+    width: fit-content;
+    margin: 10px auto;
     display: flex;
-    padding: 5px;
+    padding: 10px;
     background-color: var(--coolGray)
 }
 
 .button {
     border: 1px solid var(--gunmetalGray);
-    margin: auto;
+    margin: 5px;
     background-color: var(--burgundy);
     color: white;
     width: 50px;
     padding: 5px;
     font-size: 16px;
     font-weight: bold;
+}
+
+#exportButton {
+    width: fit-content;
 }
 
 @media screen and (min-width:761px) {
@@ -330,6 +350,9 @@ h2 {
     #beginLinkContainer {
         margin: auto;
         width: 70%;
+    }
+    .errorContainer {
+        font-size: 26px;
     }
 }
 

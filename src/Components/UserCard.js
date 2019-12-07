@@ -5,19 +5,19 @@ import MediaQuery from 'react-responsive'
 class UserCard extends React.Component{
     render(){
       return(
-          <div className='userCard'>
+          <section className='userCard'>
              <ul>
                 <li id='userName'>{this.props.name.first} {this.props.name.last}</li>
-                <li>{this.props.email}</li>
-                <li>{this.props.phone}</li>
-                <li>{this.props.age}</li>
-                <li>{this.props.gender}</li>
+                <MediaQuery maxWidth={760}>
+                  <div id='thumbnailContainer'>
+                     <img src={this.props.picture.thumbnail} alt='headshot of user' id='thumbnail'/>
+                  </div>
+               </MediaQuery>
+               <li>{this.props.age}</li>
+               <li>{this.props.gender}</li> 
+               <li>{this.props.phone}</li>
+               <li>{this.props.email}</li>  
              </ul>
-             <MediaQuery maxWidth={760}>
-                <div id='thumbnailContainer'>
-                    <img src={this.props.picture.thumbnail} alt='headshot of user' id='thumbnail'/>
-                </div>
-             </MediaQuery>
              <MediaQuery minWidth={761} maxWidth={1023}>
                 <div id='mediumImgContainer'>
                     <img src={this.props.picture.medium} id='mediumImg' alt='headshot of user'/>
@@ -26,7 +26,7 @@ class UserCard extends React.Component{
              <MediaQuery minWidth={1024}>
                 <img src={this.props.picture.large} id='LargeImg' alt='headshot of user'/>
              </MediaQuery>
-          </div>
+          </section>
       )  
     }
 }
