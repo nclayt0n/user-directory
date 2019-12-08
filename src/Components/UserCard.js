@@ -1,5 +1,5 @@
-import React from 'react'
-import MediaQuery from 'react-responsive'
+import React from 'react';
+import MediaQuery from 'react-responsive';
 
 class UserCard extends React.Component{
    static defaultProps={
@@ -25,7 +25,7 @@ class UserCard extends React.Component{
                   className='userNameButton'>
                   {this.props.name.first} {this.props.name.last}
                </button>
-               :null}
+               :null};
             {this.state.hidden===false
                ?<ul className={this.state.ulClassName}>
                   <li 
