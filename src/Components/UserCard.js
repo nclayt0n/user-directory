@@ -42,7 +42,7 @@ class UserCard extends React.Component{
                            className='thumbnail'/>
                      </div>
                   </MediaQuery>
-                  <li aria-label="users' age">{this.props.age}</li>
+                  <li aria-label="user's age">{this.props.age}</li>
                   <li aria-label="user's gender">{this.props.gender}</li> 
                   <li aria-label="user's phone number">{this.props.phone}</li>
                   <li aria-label="user's email address">{this.props.email}</li>  
