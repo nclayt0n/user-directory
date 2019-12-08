@@ -1,9 +1,9 @@
-import React from 'react'
-import UserCard from './UserCard'
-import '../App.css'
-import ApiService from '../services/api-service'
-import ValidationError from '../Validation/ValidationError'
-import {CSVLink} from 'react-csv'
+import React from 'react';
+import UserCard from './UserCard';
+import '../App.css';
+import ApiService from '../services/api-service';
+import ValidationError from '../Validation/ValidationError';
+import {CSVLink} from 'react-csv';
 const uuidv4 = require('uuid/v4');
 
 class UserList extends React.Component{
@@ -14,22 +14,22 @@ class UserList extends React.Component{
             pageLimit:10,
             users:[],
             error:''
-        }
+        };
     }
     callApi=(num)=>{
         this.setState({page:num})
         ApiService.getUser(num)
         .then(([users]) => {
-          this.setState({ users: users.results })
+          this.setState({ users: users.results });
       })
       .catch(error => {
           this.setState({ error:error.message });
-      });
+      })
     }
     componentDidMount(){
           ApiService.getUser(this.state.page)
           .then(([users]) => {
-            this.setState({ users: users.results })
+            this.setState({ users: users.results });
         })
         .catch(error => {
             this.setState({ error:error.message });

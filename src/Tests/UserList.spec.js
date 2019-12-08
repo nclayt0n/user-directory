@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom';
-import UserList from '../Components/UserList'
-import { shallow } from 'enzyme'
-import {BrowserRouter} from 'react-router-dom'
-import toJson from 'enzyme-to-json'
-import App from '../App'
+import UserList from '../Components/UserList';
+import { shallow } from 'enzyme';
+import {BrowserRouter} from 'react-router-dom';
+import toJson from 'enzyme-to-json';
+import App from '../App';
 import LandingPage from '../Components/LandingPage';
  
  describe('<UserList />', () => {

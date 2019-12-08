@@ -1,4 +1,4 @@
-import config from '../config'
+import config from '../config';
 
 const ApiService = {
     getUser(num) {
@@ -13,10 +13,11 @@ const ApiService = {
                     options)
             ])
             .then(([usersRes]) => {
-                if (!usersRes.ok)
+                if (!usersRes.ok) {
                     return usersRes.json().then(e => Promise.reject(e));
+                }
                 return Promise.all([usersRes.json()]);
-            })
+            });
     }
 }
-export default ApiService
+export default ApiService;

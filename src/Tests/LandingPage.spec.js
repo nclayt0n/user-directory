@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom';
-import LandingPage from '../Components/LandingPage'
-import { shallow } from 'enzyme'
-import {BrowserRouter} from 'react-router-dom'
-import toJson from 'enzyme-to-json'
-import App from '../App'
+import LandingPage from '../Components/LandingPage';
+import { shallow } from 'enzyme';
+import {BrowserRouter} from 'react-router-dom';
+import toJson from 'enzyme-to-json';
+import App from '../App';
  
  describe('<LandingPage />', () => {
     it('renders without crashing', () => {

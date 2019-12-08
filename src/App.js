@@ -1,8 +1,8 @@
 import React from 'react';
-import {Switch,Route} from 'react-router-dom'
-import LandingPage from './Components/LandingPage'
-import UserList from './Components/UserList'
-import NotFound from './Components/NotFound'
+import {Switch,Route} from 'react-router-dom';
+import LandingPage from './Components/LandingPage';
+import UserList from './Components/UserList';
+import NotFound from './Components/NotFound';
 
 class App extends React.Component {
   render(){
